@@ -12,7 +12,7 @@
   <style>
     @media print {
       .no-print { display: none !important; }
-      body { background: white !important; color: black !important; font-size: 11pt; }
+      body { background: white !important; color: black !important; font-size: 10.5pt; }
       .page-card { box-shadow: none !important; border: none !important; padding: 0 !important; max-width: 100% !important; }
     }
   </style>
@@ -56,7 +56,7 @@
     <section class="mb-8">
       <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 font-mono mb-2">Professional Summary</h2>
       <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-        Innovative, multidisciplinary software engineer operating at the convergence of clinical healthcare (Bachelor of Nursing Science, Registered Nurse) and scalable systems engineering. Proven track record architecting mission-critical platforms with <strong>Python, Go (Golang), Django, and Celery</strong>, specializing in HL7 FHIR R4 interoperability, NDPA 2023 statutory data privacy, automated financial governance (Four-Eyes principle), and offline GSM USSD telecommunication engines. Expert in applying high-pressure clinical precision, defensive error-handling, and test-driven development (TDD) to production software.
+        Multidisciplinary software engineer operating at the intersection of clinical healthcare practice (Registered Nurse, B.N.Sc.) and high-performance backend engineering. Architect of mission-critical platforms in <strong>Python (Django, FastAPI), Go (Golang), and Celery</strong>, specializing in HL7 FHIR R4 healthcare interoperability, NDPA 2023 statutory data privacy, automated financial governance (Four-Eyes principle), and offline GSM USSD telecommunication engines. Known for applying clinical zero-tolerance error standards, defensive transaction design, and test-driven development (TDD) across all systems.
       </p>
     </section>
 
@@ -66,89 +66,106 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
         <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
           <strong class="text-slate-900 block mb-1">Backend & Systems Programming:</strong>
-          <span class="text-slate-600">Python 3.12, Go (Golang), Django 5, Django REST Framework, Celery & Celery Beat, Redis, FastAPI, PostgreSQL, SQLite, Microservices, REST APIs.</span>
+          <span class="text-slate-600">Python 3.12, Go (Golang), Django 5, FastAPI, Django REST Framework, SQLAlchemy 2.0, Celery & Celery Beat, Redis, Alembic, PostgreSQL 16, SQLite, REST APIs.</span>
         </div>
         <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
           <strong class="text-slate-900 block mb-1">HealthTech & Interoperability Standards:</strong>
-          <span class="text-slate-600">HL7 FHIR R4, SMART on FHIR OAuth2, NDPA 2023 Compliance, NAFDAC Anti-Counterfeit Verification, GSM USSD (*384*2026#), PHQ-9 & GAD-7 Psychometrics.</span>
+          <span class="text-slate-600">HL7 FHIR R4, SMART on FHIR OAuth2, NDPA 2023 Compliance, NEWS2 Clinical Scoring, NAFDAC Anti-Counterfeit Verification, GSM USSD (*384*2026#), PHQ-9 & GAD-7.</span>
         </div>
         <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
-          <strong class="text-slate-900 block mb-1">DevOps, Testing & Tooling:</strong>
-          <span class="text-slate-600">Docker, Docker Compose, Linux, Git/GitHub, Pytest (TDD), CI/CD Automation, Cryptographic SHA-256 Hashing, OpenAPI / Swagger 3.0.</span>
+          <strong class="text-slate-900 block mb-1">DevOps, Testing & Quality:</strong>
+          <span class="text-slate-600">Docker, Docker Compose, Linux / Bash, Git/GitHub, Pytest (TDD), CI/CD Automation, Cryptographic SHA-256 Hashing, OpenAPI 3.0 / Swagger.</span>
         </div>
         <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
-          <strong class="text-slate-900 block mb-1">Clinical & Domain Authority:</strong>
-          <span class="text-slate-600">Registered Nurse (RN), Clinical Triage Protocols, Patient Safety Incident Reporting, Hospital Workflow Coordination, Mental Health Advocacy (RMHN).</span>
+          <strong class="text-slate-900 block mb-1">Clinical Domain Authority:</strong>
+          <span class="text-slate-600">Registered Nurse (RN), Inpatient Patient Navigation, Clinical Deterioration Detection, Hospital Workflow Governance, Mental Health Advocacy (RMHN).</span>
         </div>
       </div>
     </section>
 
-    <!-- Engineering Experience & Key Projects -->
+    <!-- Engineering Projects & Professional Experience -->
     <section class="mb-8">
       <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 font-mono mb-4">Engineering Projects & Professional Experience</h2>
 
       <div class="space-y-6">
 
-        <!-- Role 1 -->
+        <!-- Project 1: NCD Patient Safety Platform -->
         <div class="border-l-2 border-teal-600 pl-4">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-slate-900">Lead Architect & Full-Stack Engineer &bull; NCD Patient Safety Platform</h3>
-            <span class="text-xs font-mono text-slate-500">2025 &ndash; Present</span>
+            <h3 class="text-base font-bold text-slate-900">Lead Architect & Backend Engineer &bull; NCD Patient Safety Platform</h3>
+            <span class="text-xs font-mono text-slate-600 font-medium">September 2026 &ndash; November 2026</span>
           </div>
-          <p class="text-xs font-medium text-teal-800 mb-2">Flagship Enterprise Healthcare Interoperability & Governance System</p>
+          <p class="text-xs font-medium text-teal-800 mb-2">Django 5, DRF, Celery, Redis, HL7 FHIR R4, SMART on FHIR, NDPA 2023, GSM USSD</p>
           <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1.5 leading-relaxed">
             <li>Architected a national and global-scale digital platform for Non-Communicable Diseases (Oncology, End-Stage Renal Disease, Cardiovascular, Diabetes).</li>
-            <li>Implemented an <strong>HL7 FHIR R4 gateway</strong> declaring SMART-on-FHIR OAuth2 conformance for hospital EMR integration.</li>
-            <li>Designed a statutory <strong>NDPA 2023 consent module</strong> and an immutable, append-only audit trail with blockchain-style SHA-256 hash chaining.</li>
-            <li>Engineered an interactive <strong>GSM USSD engine (*384*2026#)</strong> and multi-channel SMS gateway (English, Hausa, Yorùbá, Igbo) for low-bandwidth rural clinical clinics.</li>
-            <li>Built automated NIBSS direct-to-provider settlement workflows with strict <strong>Four-Eyes financial approval</strong> protocols.</li>
+            <li>Implemented an <strong>HL7 FHIR R4 gateway</strong> declaring SMART-on-FHIR OAuth2 conformance for hospital EMR connectivity.</li>
+            <li>Engineered statutory <strong>NDPA 2023 patient consent</strong> management and a tamper-evident audit ledger with blockchain-style SHA-256 hash chaining.</li>
+            <li>Developed an interactive <strong>GSM USSD engine (*384*2026#)</strong> and multi-channel SMS gateway (English, Hausa, Yorùbá, Igbo) for low-bandwidth rural clinical clinics.</li>
+            <li>Designed automated NIBSS direct-to-provider settlement workflows with strict <strong>Four-Eyes financial approval</strong> governance.</li>
             <li>Authored complete automated test suite achieving <strong>87 passed tests out of 87 (100% test pass rate)</strong> using Pytest.</li>
           </ul>
         </div>
 
-        <!-- Role 2 -->
+        <!-- Project 2: CARELINK -->
         <div class="border-l-2 border-teal-600 pl-4">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-slate-900">Software Engineer &bull; Automated Enterprise Payroll Platform</h3>
-            <span class="text-xs font-mono text-slate-500">2025 &ndash; Present</span>
+            <h3 class="text-base font-bold text-slate-900">Backend & Systems Engineer &bull; CareLink Platform</h3>
+            <span class="text-xs font-mono text-slate-600 font-medium">September 2026 &ndash; October 2026</span>
           </div>
-          <p class="text-xs font-medium text-teal-800 mb-2">FinTech & Statutory Compliance Engine</p>
+          <p class="text-xs font-medium text-teal-800 mb-2">FastAPI, Python 3.12, SQLAlchemy 2.0, Alembic, Pydantic v2, PostgreSQL 16, Docker</p>
           <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1.5 leading-relaxed">
-            <li>Developed an automated salary computation platform handling tiered tax schedules, pension contributions, and allowance ledgers.</li>
-            <li>Enforced strict double-entry ledger balancing preventing rounding and disbursement discrepancies.</li>
+            <li>Built a production-grade hospital workflow and clinical continuity platform addressing communication failures and patient deterioration during shift handovers.</li>
+            <li>Enforced a <strong>Zero-Trust Role-Based Access Control (RBAC)</strong> model strictly governing Doctor, Nurse, Pharmacist, and Laboratory roles in alignment with statutory healthcare councils (MDCN, NMCN, PCN, MLSCN).</li>
+            <li>Implemented deterministic <strong>National Early Warning Score (NEWS2)</strong> computation with real-time red-flag alerting for critical hypoxia, severe hypotension, and sepsis risk.</li>
+            <li>Engineered single-call inpatient <strong>Shift Handover Summaries</strong>, bed state lifecycle management (<code class="text-xs font-mono">AVAILABLE</code> &harr; <code class="text-xs font-mono">OCCUPIED</code>), and unified chronological patient event timelines.</li>
+            <li>Achieved <strong>148 passing automated tests (100% pass rate)</strong> across all clinical, transactional, and audit endpoints.</li>
           </ul>
         </div>
 
-        <!-- Role 3 -->
+        <!-- Project 3: Payrool -->
+        <div class="border-l-2 border-teal-600 pl-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <h3 class="text-base font-bold text-slate-900">Backend Engineer &bull; Payrool (Student Payroll & Allowance System)</h3>
+            <span class="text-xs font-mono text-slate-600 font-medium">October 2026 &ndash; November 2026</span>
+          </div>
+          <p class="text-xs font-medium text-teal-800 mb-2">Go (Golang), SQLite, RESTful API, Layered Architecture</p>
+          <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1.5 leading-relaxed">
+            <li>Engineered a lightweight, high-performance RESTful API in Go to automate the calculation and disbursement of student stipends based on verifiable attendance records.</li>
+            <li>Implemented clean layered architecture (<code class="text-xs font-mono">handler</code> &rarr; <code class="text-xs font-mono">service</code> &rarr; <code class="text-xs font-mono">repository</code>) with atomic database transactions.</li>
+            <li>Structured role-based permission boundaries (Admin, Manager, Attendance Officer, Staff) with embedded SQLite persistence.</li>
+          </ul>
+        </div>
+
+        <!-- Project 4: Go-Reloaded -->
         <div class="border-l-2 border-teal-600 pl-4">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
             <h3 class="text-base font-bold text-slate-900">Systems Developer &bull; Go-Reloaded Lexical Engine</h3>
-            <span class="text-xs font-mono text-slate-500">2024 &ndash; 2025</span>
+            <span class="text-xs font-mono text-slate-600 font-medium">March 2026 &ndash; November 2026</span>
           </div>
-          <p class="text-xs font-medium text-teal-800 mb-2">Systems & Algorithms in Go (Golang)</p>
+          <p class="text-xs font-medium text-teal-800 mb-2">Go (Golang), Lexical Analysis, String Algorithms, Standard Library</p>
           <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1.5 leading-relaxed">
-            <li>Engineered a high-performance string manipulation and lexical parsing engine in pure Go.</li>
-            <li>Optimized memory allocations and algorithmic complexity, achieving microsecond execution times.</li>
+            <li>Engineered a high-performance text manipulation and lexical parsing utility in idiomatic Go without external dependencies.</li>
+            <li>Implemented tokenization, case-conversion, punctuation normalization, and numerical base transformations with microsecond execution times and zero memory leaks.</li>
           </ul>
         </div>
 
-        <!-- Role 4 -->
+        <!-- Role 5: Clinical Practice & Advocacy -->
         <div class="border-l-2 border-teal-600 pl-4">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-slate-900">Healthcare Practitioner &bull; Registered Nurse (RN)</h3>
-            <span class="text-xs font-mono text-slate-500">2022 &ndash; Present</span>
+            <h3 class="text-base font-bold text-slate-900">Registered Nurse (RN) & Mental Health Advocate</h3>
+            <span class="text-xs font-mono text-slate-600 font-medium">November 2025 &ndash; Present</span>
           </div>
-          <p class="text-xs font-medium text-teal-800 mb-2">Clinical Care, Patient Navigation & Advocate, Resilient Mental Health Network (RMHN)</p>
+          <p class="text-xs font-medium text-teal-800 mb-2">Clinical Healthcare Practice &bull; Resilient Mental Health Network (RMHN)</p>
           <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1.5 leading-relaxed">
-            <li>Delivered high-acuity clinical care, hemodialysis support, and patient safety triage across hospital settings.</li>
-            <li>Advocated with the Resilient Mental Health Network (RMHN) driving technology-enabled psychosocial screening and community health resilience.</li>
+            <li>Delivered high-acuity patient care, vital signs monitoring, medication safety administration, and inpatient care coordination.</li>
+            <li>Active advocate with the <strong>Resilient Mental Health Network (RMHN)</strong>, driving community mental health resilience and technology-enabled psychosocial screening.</li>
           </ul>
         </div>
 
       </div>
     </section>
 
-    <!-- Education & Credentials -->
+    <!-- Education & Professional Licenses -->
     <section class="border-t border-slate-200 pt-6">
       <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 font-mono mb-4">Education & Professional Licenses</h2>
       <div class="space-y-3 text-xs sm:text-sm text-slate-700">
@@ -156,13 +173,13 @@
           <div>
             <strong>Bachelor of Nursing Science (B.N.Sc.)</strong> &bull; University Degree
           </div>
-          <span class="text-xs font-mono text-slate-500">Graduated</span>
+          <span class="text-xs font-mono text-slate-600 font-medium">Graduation: January 2026</span>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-center justify-between">
           <div>
-            <strong>Registered Nurse (RN) License</strong> &bull; Professional Nursing & Midwifery Council
+            <strong>Registered Nurse (RN) License</strong> &bull; Nursing & Midwifery Council of Nigeria (NMCN)
           </div>
-          <span class="text-xs font-mono text-emerald-700 font-semibold">Active & Certified</span>
+          <span class="text-xs font-mono text-emerald-700 font-semibold">Certified: November 2025</span>
         </div>
       </div>
     </section>
