@@ -58,7 +58,7 @@
     <section class="mb-8">
       <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 font-mono mb-2">Professional Summary</h2>
       <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-        Multidisciplinary software engineer operating at the intersection of clinical healthcare practice (Registered Nurse, B.N.Sc.) and high-performance backend engineering. Creator and lead architect of <strong>CareLink</strong> (a production-grade clinical continuity and NEWS2 patient safety platform in FastAPI with 148 automated tests) and co-engineer of enterprise HealthTech solutions including the <strong>NCD Patient Safety Platform</strong> (HL7 FHIR R4, NDPA 2023, GSM USSD). Known for applying clinical zero-tolerance error standards, defensive transaction design, and test-driven development (TDD) across Python, Go, and relational databases.
+        Multidisciplinary software engineer operating at the intersection of clinical healthcare practice (Registered Nurse, B.N.Sc.) and high-performance backend engineering. Creator and lead architect of <strong>CareLink</strong> (a production-grade clinical continuity and NEWS2 patient safety platform in FastAPI with 165 automated tests) and co-engineer of enterprise HealthTech solutions including the <strong>NCD Patient Safety Platform</strong> (HL7 FHIR R4, NDPA 2023, GSM USSD). Known for applying clinical zero-tolerance error standards, defensive transaction design, and test-driven development (TDD) across Python, Go, and relational databases.
       </p>
     </section>
 
@@ -102,8 +102,10 @@
             <li>Architected and authored the production-grade hospital workflow and clinical continuity platform addressing communication failures and patient deterioration during shift handovers.</li>
             <li>Enforced a <strong>Zero-Trust Role-Based Access Control (RBAC)</strong> model strictly governing Doctor, Nurse, Pharmacist, and Laboratory roles in alignment with statutory healthcare councils (MDCN, NMCN, PCN, MLSCN).</li>
             <li>Implemented deterministic <strong>National Early Warning Score (NEWS2)</strong> computation with real-time red-flag alerting for critical hypoxia, severe hypotension, and sepsis risk.</li>
-            <li>Engineered single-call inpatient <strong>Shift Handover Summaries</strong>, bed state lifecycle management (<code class="text-xs font-mono">AVAILABLE</code> &harr; <code class="text-xs font-mono">OCCUPIED</code>), and unified chronological patient event timelines.</li>
-            <li>Authored complete automated test suite achieving <strong>148 passing automated tests (100% pass rate)</strong> across all clinical, transactional, and audit endpoints.</li>
+            <li>Engineered an in-process <strong>Clinical Safety Watchdog</strong> featuring an anti-fatigue debounce cache (30m cooldown) that proactively monitors for critical physiological deterioration, overdue STAT laboratory tests (>60m SLA), and shift handover review gaps.</li>
+            <li>Implemented standardized <strong>HL7&reg; FHIR&reg; R4 Collection Bundle Export</strong> (<code class="text-xs font-mono">GET /clinical/fhir/{patient_id}</code>) translating clinical vitals, encounters, and diagnoses into international LOINC and UCUM codes.</li>
+            <li>Constructed a tamper-evident <strong>SHA-256 Chained Audit Ledger</strong> (<code class="text-xs font-mono">GET /audit/verify</code>) with forensic hash verification guaranteeing immutable data integrity under the Nigeria Data Protection Act (NDPA 2023).</li>
+            <li>Authored complete automated test suite achieving <strong>165 passing automated tests (100% pass rate)</strong> across all clinical, transactional, security, and audit endpoints.</li>
           </ul>
         </div>
 

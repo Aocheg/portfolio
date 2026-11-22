@@ -215,7 +215,7 @@
     <section class="border-y border-slate-800/80 bg-slate-900/50 py-10 px-4 sm:px-6 lg:px-8">
       <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div class="space-y-1">
-          <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-300 font-display">148 / 148</div>
+          <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-300 font-display">165 / 165</div>
           <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">CareLink Flagship Tests (100%)</div>
         </div>
         <div class="space-y-1">
@@ -227,7 +227,7 @@
           <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Dual Clinical & Technical Domain</div>
         </div>
         <div class="space-y-1">
-          <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-display">235+ Tests</div>
+          <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-display">252+ Tests</div>
           <div class="text-xs sm:text-sm font-medium text-slate-400 uppercase tracking-wider">Total Verified Automated Tests</div>
         </div>
       </div>
@@ -323,11 +323,11 @@
           </h3>
 
           <p class="text-slate-300 text-base sm:text-lg mb-8 max-w-4xl leading-relaxed">
-            A production-grade inpatient clinical continuity and safety platform engineered to eliminate shift-handover communication failures and preventable patient deterioration. Built directly from dual nursing and software engineering expertise, CareLink enforces a Zero-Trust clinical privilege model, real-time deterministic NEWS2 scoring with red-flag alerting, single-call handover summaries, and hospital-wide ward bed state orchestration.
+            A production-grade inpatient clinical continuity and safety platform engineered to eliminate shift-handover communication failures and preventable patient deterioration. Built directly from dual nursing and software engineering expertise, CareLink enforces a Zero-Trust clinical privilege model, real-time deterministic NEWS2 scoring, an in-process clinical safety watchdog with anti-fatigue debounce caching, HL7&reg; FHIR&reg; R4 international export, and tamper-evident SHA-256 chained audit verification under NDPA 2023.
           </p>
 
           <!-- Core Architectural Pillars -->
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
               <div class="flex items-center gap-2 text-emerald-400 font-mono text-xs font-semibold uppercase mb-1">
                 <i data-lucide="activity" class="w-3.5 h-3.5"></i> NEWS2 Deterioration Engine
@@ -338,13 +338,25 @@
               <div class="flex items-center gap-2 text-cyan-400 font-mono text-xs font-semibold uppercase mb-1">
                 <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Zero-Trust Clinical RBAC
               </div>
-              <p class="text-slate-400 text-xs">Server-enforced role privileges aligned with MDCN, NMCN, PCN, and MLSCN statutory councils.</p>
+              <p class="text-slate-400 text-xs">Server-enforced role privileges aligned with MDCN, NMCN, PCN, and MLSCN statutory healthcare councils.</p>
             </div>
             <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
               <div class="flex items-center gap-2 text-emerald-400 font-mono text-xs font-semibold uppercase mb-1">
-                <i data-lucide="clipboard-list" class="w-3.5 h-3.5"></i> Shift Handover & Timeline
+                <i data-lucide="bell-ring" class="w-3.5 h-3.5"></i> Clinical Safety Watchdog
               </div>
-              <p class="text-slate-400 text-xs">Single-call aggregated clinical snapshots and chronological time-series patient audit stream.</p>
+              <p class="text-slate-400 text-xs">In-process monitor with anti-fatigue debounce cooldown (30m) for STAT lab breaches and handover coverage gaps.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="flex items-center gap-2 text-cyan-400 font-mono text-xs font-semibold uppercase mb-1">
+                <i data-lucide="share-2" class="w-3.5 h-3.5"></i> HL7&reg; FHIR&reg; R4 Interoperability
+              </div>
+              <p class="text-slate-400 text-xs">Standardized <code class="text-cyan-300">GET /clinical/fhir/{id}</code> bundle exporting patient observations coded in LOINC and UCUM.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+              <div class="flex items-center gap-2 text-emerald-400 font-mono text-xs font-semibold uppercase mb-1">
+                <i data-lucide="lock" class="w-3.5 h-3.5"></i> SHA-256 Chained Audit Ledger
+              </div>
+              <p class="text-slate-400 text-xs">Tamper-evident cryptographically chained audit trail with admin forensic verification endpoint under NDPA 2023.</p>
             </div>
             <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
               <div class="flex items-center gap-2 text-cyan-400 font-mono text-xs font-semibold uppercase mb-1">
@@ -362,9 +374,12 @@
             <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">Pydantic v2</span>
             <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">PostgreSQL 16</span>
             <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">Alembic</span>
+            <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">HL7 FHIR R4</span>
+            <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">SHA-256 Audit Chain</span>
+            <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">Clinical Watchdog</span>
             <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">Docker & Compose</span>
             <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">GitHub Actions CI</span>
-            <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">148 Passing Tests</span>
+            <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">165 Passing Tests</span>
             <span class="code-badge px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300">Web Dashboard</span>
           </div>
 
