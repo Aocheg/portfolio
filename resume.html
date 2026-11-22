@@ -58,7 +58,7 @@
     <section class="mb-8">
       <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 font-mono mb-2">Professional Summary</h2>
       <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
-        Multidisciplinary software engineer operating at the intersection of clinical healthcare practice (Registered Nurse, B.N.Sc.) and high-performance backend engineering. Architect of mission-critical platforms in <strong>Python (Django, FastAPI), Go (Golang), and Celery</strong>, specializing in HL7 FHIR R4 healthcare interoperability, NDPA 2023 statutory data privacy, automated financial governance (Four-Eyes principle), and offline GSM USSD telecommunication engines. Known for applying clinical zero-tolerance error standards, defensive transaction design, and test-driven development (TDD) across all systems.
+        Multidisciplinary software engineer operating at the intersection of clinical healthcare practice (Registered Nurse, B.N.Sc.) and high-performance backend engineering. Creator and lead architect of <strong>CareLink</strong> (a production-grade clinical continuity and NEWS2 patient safety platform in FastAPI with 148 automated tests) and co-engineer of enterprise HealthTech solutions including the <strong>NCD Patient Safety Platform</strong> (HL7 FHIR R4, NDPA 2023, GSM USSD). Known for applying clinical zero-tolerance error standards, defensive transaction design, and test-driven development (TDD) across Python, Go, and relational databases.
       </p>
     </section>
 
@@ -91,36 +91,35 @@
 
       <div class="space-y-6">
 
-        <!-- Project 1: NCD Patient Safety Platform -->
+        <!-- Project 1: CARELINK (Personal Flagship Project) -->
         <div class="border-l-2 border-teal-600 pl-4">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-slate-900">Lead Architect & Backend Engineer &bull; NCD Patient Safety Platform</h3>
-            <span class="text-xs font-mono text-slate-600 font-medium">September 2026 &ndash; November 2026</span>
-          </div>
-          <p class="text-xs font-medium text-teal-800 mb-2">Django 5, DRF, Celery, Redis, HL7 FHIR R4, SMART on FHIR, NDPA 2023, GSM USSD</p>
-          <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1.5 leading-relaxed">
-            <li>Architected a national and global-scale digital platform for Non-Communicable Diseases (Oncology, End-Stage Renal Disease, Cardiovascular, Diabetes).</li>
-            <li>Implemented an <strong>HL7 FHIR R4 gateway</strong> declaring SMART-on-FHIR OAuth2 conformance for hospital EMR connectivity.</li>
-            <li>Engineered statutory <strong>NDPA 2023 patient consent</strong> management and a tamper-evident audit ledger with blockchain-style SHA-256 hash chaining.</li>
-            <li>Developed an interactive <strong>GSM USSD engine (*384*2026#)</strong> and multi-channel SMS gateway (English, Hausa, Yorùbá, Igbo) for low-bandwidth rural clinical clinics.</li>
-            <li>Designed automated NIBSS direct-to-provider settlement workflows with strict <strong>Four-Eyes financial approval</strong> governance.</li>
-            <li>Authored complete automated test suite achieving <strong>87 passed tests out of 87 (100% test pass rate)</strong> using Pytest.</li>
-          </ul>
-        </div>
-
-        <!-- Project 2: CARELINK -->
-        <div class="border-l-2 border-teal-600 pl-4">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-slate-900">Backend & Systems Engineer &bull; CareLink Platform</h3>
+            <h3 class="text-base font-bold text-slate-900">Lead Architect & Backend Engineer &bull; CareLink Platform</h3>
             <span class="text-xs font-mono text-slate-600 font-medium">September 2026 &ndash; October 2026</span>
           </div>
-          <p class="text-xs font-medium text-teal-800 mb-2">FastAPI, Python 3.12, SQLAlchemy 2.0, Alembic, Pydantic v2, PostgreSQL 16, Docker</p>
+          <p class="text-xs font-medium text-teal-800 mb-2">FastAPI, Python 3.12, SQLAlchemy 2.0, Alembic, Pydantic v2, PostgreSQL 16, Docker (Personal Flagship Project)</p>
           <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1.5 leading-relaxed">
-            <li>Built a production-grade hospital workflow and clinical continuity platform addressing communication failures and patient deterioration during shift handovers.</li>
+            <li>Architected and authored the production-grade hospital workflow and clinical continuity platform addressing communication failures and patient deterioration during shift handovers.</li>
             <li>Enforced a <strong>Zero-Trust Role-Based Access Control (RBAC)</strong> model strictly governing Doctor, Nurse, Pharmacist, and Laboratory roles in alignment with statutory healthcare councils (MDCN, NMCN, PCN, MLSCN).</li>
             <li>Implemented deterministic <strong>National Early Warning Score (NEWS2)</strong> computation with real-time red-flag alerting for critical hypoxia, severe hypotension, and sepsis risk.</li>
             <li>Engineered single-call inpatient <strong>Shift Handover Summaries</strong>, bed state lifecycle management (<code class="text-xs font-mono">AVAILABLE</code> &harr; <code class="text-xs font-mono">OCCUPIED</code>), and unified chronological patient event timelines.</li>
-            <li>Achieved <strong>148 passing automated tests (100% pass rate)</strong> across all clinical, transactional, and audit endpoints.</li>
+            <li>Authored complete automated test suite achieving <strong>148 passing automated tests (100% pass rate)</strong> across all clinical, transactional, and audit endpoints.</li>
+          </ul>
+        </div>
+
+        <!-- Project 2: NCD Patient Safety Platform (Collaborative Project) -->
+        <div class="border-l-2 border-teal-600 pl-4">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+            <h3 class="text-base font-bold text-slate-900">Co-Engineer & Healthcare Systems Specialist &bull; NCD Patient Safety Platform</h3>
+            <span class="text-xs font-mono text-slate-600 font-medium">September 2026 &ndash; November 2026</span>
+          </div>
+          <p class="text-xs font-medium text-teal-800 mb-2">Django 5, DRF, Celery, Redis, HL7 FHIR R4, SMART on FHIR, NDPA 2023, GSM USSD (Collaborative Project)</p>
+          <ul class="list-disc list-inside text-xs sm:text-sm text-slate-600 space-y-1.5 leading-relaxed">
+            <li>Co-engineered a national and global-scale digital platform for chronic Non-Communicable Diseases in collaboration with lead maintainer @antenyijoseph20-glitch.</li>
+            <li>Contributed to the <strong>HL7 FHIR R4 gateway</strong> declaring SMART-on-FHIR OAuth2 conformance for hospital EMR connectivity.</li>
+            <li>Engineered statutory <strong>NDPA 2023 patient consent</strong> management and a tamper-evident audit ledger with blockchain-style SHA-256 hash chaining.</li>
+            <li>Developed the interactive <strong>GSM USSD engine (*384*2026#)</strong> and multi-channel SMS gateway (English, Hausa, Yorùbá, Igbo) for low-bandwidth rural clinical clinics.</li>
+            <li>Co-authored automated test suite achieving <strong>87 passed tests out of 87 (100% test pass rate)</strong> using Pytest.</li>
           </ul>
         </div>
 
